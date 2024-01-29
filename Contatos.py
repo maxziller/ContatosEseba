@@ -52,6 +52,7 @@ def quebralinha(line):
     return (turma,aluno,email,telefones)
     
 
+#Path deve ser modificado para ter o caminho do arquivo com os contatos gerados pela tabela da secretaria escolar
 path = 'C:/Users/Administrador/Documents/ListadeContato.csv'
 arquivo = open(path, 'r')
 telefones = dict()
