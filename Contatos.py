@@ -1,6 +1,13 @@
 import os
 import re
 
+'''
+Script feito para receber as tabelas de contatos geradas pela secretaria da escola
+e transformá-las em arquivo CSV legível no Google Contacts para importar de forma mais fácil
+A escola costuma deixar um estagiário para atualizar os contatos todo ano manualmente
+Esse script automatiza quase todo o serviço
+'''
+
 class Contato:
     def __init__(self, numero,nome):
         self.numero = numero
@@ -52,7 +59,6 @@ def quebralinha(line):
     return (turma,aluno,email,telefones)
     
 
-#Path deve ser modificado para ter o caminho do arquivo com os contatos gerados pela tabela da secretaria escolar
 path = 'C:/Users/Administrador/Documents/ListadeContato.csv'
 arquivo = open(path, 'r')
 telefones = dict()
